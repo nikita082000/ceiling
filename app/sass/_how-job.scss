@@ -1,0 +1,56 @@
+.how-job {
+  background-color: #f8fbfc;
+  padding: 80px 0;
+  &-title {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 400;
+    color: black;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    &-item {
+      width: 263px;
+      height: 395px;
+      border: 1px solid #dcdcdc;
+      transition: all .3s ease;
+      padding: 40px 17px 15px 17px;
+      position: relative;
+      &:hover {
+        border: 1px solid #4274b0;
+      }
+      &-title {
+        color: black;
+        font-weight: 400;
+        font-size: 24px;
+        margin-top: 23px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 300;
+        color: black;
+        line-height: 1.4;
+        span {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        a {
+          font-weight: 400;
+          color: black;
+        }
+      }
+      &-num {
+        font-size: 80px;
+        color: #4274b0;
+        font-weight: 400;
+        position: absolute;
+        bottom: -20px;
+        text-align: center;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+}
