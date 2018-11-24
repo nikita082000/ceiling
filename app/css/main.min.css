@@ -758,3 +758,84 @@ ul {
         line-height: 1.2; }
         .advantages-list-item p span {
           font-weight: 500; }
+
+.what-get {
+  padding-bottom: 70px;
+  padding-top: 60px; }
+  .what-get-title {
+    font-size: 28px;
+    font-weight: 400;
+    color: black;
+    padding-bottom: 45px;
+    max-width: 845px;
+    margin: 0 auto; }
+  .what-get-slider {
+    max-width: 940px;
+    margin: 0 auto; }
+    .what-get-slider .slick-slide img {
+      margin: 0 auto;
+      width: 293px;
+      height: 294px;
+      -o-object-fit: none;
+         object-fit: none; }
+    .what-get-slider .slick-slide {
+      outline: none; }
+    .what-get-slider .slick-list {
+      padding: 5px 0; }
+    .what-get-slider .slick-next {
+      height: auto;
+      right: -60px; }
+      .what-get-slider .slick-next:before {
+        content: url(../img/icon/slider-arrow-right.svg); }
+    .what-get-slider .slick-prev {
+      height: auto;
+      left: -80px; }
+      .what-get-slider .slick-prev:before {
+        content: url(../img/icon/slider-arrow-left.svg); }
+    .what-get-slider-item {
+      position: relative;
+      cursor: pointer; }
+      .what-get-slider-item:hover .what-get-slider-overlay {
+        visibility: visible; }
+    .what-get-slider-overlay {
+      text-align: center;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: block;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      max-width: 294px;
+      background-color: rgba(255, 255, 255, 0.5);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      visibility: hidden; }
+      .what-get-slider-overlay:after {
+        content: url("../img/icon/slider-zoom.svg");
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+      .what-get-slider-overlay:hover {
+        -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.3); }
+      .what-get-slider-overlay span {
+        color: black;
+        font-size: 22px;
+        font-weight: 400;
+        padding-bottom: 30px; }

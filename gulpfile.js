@@ -37,7 +37,7 @@ gulp.task('sass', function() {
 
 gulp.task('js', function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
+		// 'app/libs/jquery/dist/jquery.min.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
@@ -66,7 +66,7 @@ gulp.task('minify-css', function() {
 
 gulp.task('minify-js', function() {
   return gulp.src([
-    'app/libs/jquery/dist/jquery.min.js',
+    // 'app/libs/jquery/dist/jquery.min.js',
     'app/js/common.js', // Всегда в конце
     ])
   .pipe(concat('scripts.min.js'))
