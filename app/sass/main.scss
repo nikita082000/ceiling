@@ -2,7 +2,9 @@
 @import "libs";
 @import "base";
 @import "vars";
+@import "mixins";
 
-
+@import "global";
+@import "header";
 
 @import "media"; // Всегда в конце

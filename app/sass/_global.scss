@@ -1,0 +1,71 @@
+body {
+  font-family: 'Lato';
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.btn-green {
+  background-color: $green;
+  border: 0;
+  border-radius: 3px;
+  height: 50px;
+  color: white;
+
+  &:hover {
+    box-shadow: none;
+    -webkit-animation: si-button-pulse 0.8s 0s ease-out 1;
+    -moz-animation: si-button-pulse 0.8s 0s ease-out 1;
+    animation: si-button-pulse 0.8s 0s ease-out 1;
+  }
+
+  &-lg {
+    width: 277px;
+    height: 50px;
+    box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.6);
+    border-bottom: 4px solid $dark-green;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+}
+
+@-webkit-keyframes si-button-pulse {
+  from {
+    box-shadow: 0 0 8px 6px $green, 0 0 12px 14px $green;
+  }
+
+  to {
+    box-shadow: 0 0 18px 6px rgba(255, 48, 26, 0), 0 0 4px 40px rgba(255, 48, 26, 0);
+  }
+
+}
+
+@-moz-keyframes si-button-pulse {
+  from {
+    box-shadow: 0 0 8px 6px $green, 0 0 12px 14px $green;
+  }
+
+  to {
+    box-shadow: 0 0 18px 6px rgba(255, 48, 26, 0), 0 0 4px 40px rgba(255, 48, 26, 0);
+  }
+
+}
+
+@keyframes si-button-pulse {
+  from {
+    box-shadow: 0 0 8px 6px $green, 0 0 12px 14px $green;
+  }
+
+  to {
+    box-shadow: 0 0 18px 6px rgba(255, 48, 26, 0), 0 0 4px 40px rgba(255, 48, 26, 0);
+  }
+
+}

@@ -28,6 +28,12 @@
   font-weight: 600;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Lato';
+  src: url("../../fonts/latoblack.woff2") format("woff2"), url("../../fonts/latoblack.woff") format("woff"), url("../../fonts/latoblack.woff") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -449,3 +455,271 @@ body {
 
 .text-center {
   text-align: center; }
+
+body {
+  font-family: 'Lato'; }
+
+p {
+  margin: 0; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+.btn-green {
+  background-color: #3f933d;
+  border: 0;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  height: 50px;
+  color: white; }
+  .btn-green:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-animation: si-button-pulse 0.8s 0s ease-out 1;
+    animation: si-button-pulse 0.8s 0s ease-out 1; }
+  .btn-green-lg {
+    width: 277px;
+    height: 50px;
+    -webkit-box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.6);
+    border-bottom: 4px solid #056402;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500; }
+
+@-webkit-keyframes si-button-pulse {
+  from {
+    -webkit-box-shadow: 0 0 8px 6px #3f933d, 0 0 12px 14px #3f933d;
+            box-shadow: 0 0 8px 6px #3f933d, 0 0 12px 14px #3f933d; }
+  to {
+    -webkit-box-shadow: 0 0 18px 6px rgba(255, 48, 26, 0), 0 0 4px 40px rgba(255, 48, 26, 0);
+            box-shadow: 0 0 18px 6px rgba(255, 48, 26, 0), 0 0 4px 40px rgba(255, 48, 26, 0); } }
+
+@keyframes si-button-pulse {
+  from {
+    -webkit-box-shadow: 0 0 8px 6px #3f933d, 0 0 12px 14px #3f933d;
+            box-shadow: 0 0 8px 6px #3f933d, 0 0 12px 14px #3f933d; }
+  to {
+    -webkit-box-shadow: 0 0 18px 6px rgba(255, 48, 26, 0), 0 0 4px 40px rgba(255, 48, 26, 0);
+            box-shadow: 0 0 18px 6px rgba(255, 48, 26, 0), 0 0 4px 40px rgba(255, 48, 26, 0); } }
+
+.header {
+  background-image: url(../img/bg/main-bg.jpeg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  padding-bottom: 160px; }
+  .header-top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 0 115px 0; }
+    .header-top-info {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .header-top-info p {
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 25px; }
+    .header-top-call {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .header-top-call-btn {
+        width: 180px;
+        font-size: 16px;
+        color: white;
+        border-bottom: 3px solid #056402; }
+      .header-top-call-phone {
+        padding-left: 40px; }
+        .header-top-call-phone a {
+          font-size: 28px;
+          font-weight: 700;
+          color: white;
+          display: block;
+          text-decoration: none;
+          line-height: 1.2; }
+          .header-top-call-phone a:before {
+            content: url("../img/icon/phone-call.png");
+            padding-right: 13px; }
+        .header-top-call-phone span {
+          color: #fefefe;
+          font-size: 16px;
+          font-weight: 300; }
+  .header-main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .header-main-desc {
+      max-width: 650px; }
+      .header-main-desc h1 {
+        color: white;
+        font-weight: 900;
+        line-height: 50px;
+        font-size: 56px;
+        margin-top: 0; }
+      .header-main-desc-list {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .header-main-desc-list ul {
+          padding: 0;
+          margin: 0;
+          max-width: 323px; }
+          .header-main-desc-list ul li {
+            list-style: none;
+            font-size: 22px;
+            color: white;
+            font-weight: 300;
+            line-height: 20.02px;
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 25px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            .header-main-desc-list ul li img {
+              position: absolute;
+              left: 0; }
+    .header-main-form {
+      position: relative; }
+      .header-main-form .btn-green {
+        margin-top: 20px; }
+      .header-main-form-present {
+        position: absolute;
+        right: -150px;
+        bottom: -30px; }
+
+.form-wrapper {
+  max-width: 365px;
+  -webkit-box-shadow: 0 0 7px 1px rgba(255, 255, 255, 0.6);
+          box-shadow: 0 0 7px 1px rgba(255, 255, 255, 0.6);
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background-color: white;
+  padding: 25px 40px; }
+  .form-wrapper-header {
+    margin-left: 40px;
+    position: relative;
+    padding-bottom: 50px; }
+    .form-wrapper-header-gift {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-color: #625857;
+      width: 140px;
+      height: 45px;
+      -webkit-border-radius: 23px;
+              border-radius: 23px;
+      position: absolute;
+      bottom: -10px;
+      right: -60px; }
+      .form-wrapper-header-gift img {
+        padding: 0 10px 0 15px; }
+      .form-wrapper-header-gift span {
+        color: white;
+        font-weight: 400;
+        line-height: 14px; }
+  .form-wrapper-title {
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px; }
+    .form-wrapper-title span {
+      font-weight: 700; }
+  .form-wrapper-subtitle {
+    font-size: 18px;
+    color: black;
+    font-weight: 300;
+    line-height: 17px;
+    padding: 5px 0; }
+  .form-wrapper .consent-save-data {
+    display: block;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.6); }
+
+.form-group {
+  margin-bottom: 0; }
+  .form-group label {
+    color: black;
+    font-size: 14px;
+    font-weight: 300; }
+  .form-group input {
+    background-color: #eef2f6;
+    max-width: 277px;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    padding-left: 40px;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(105, 120, 135, 0.6);
+    outline: 0; }
+    .form-group input::-webkit-input-placeholder {
+      color: rgba(105, 120, 135, 0.6);
+      font-size: 16px;
+      font-weight: 300; }
+    .form-group input:-moz-placeholder {
+      color: rgba(105, 120, 135, 0.6);
+      font-size: 16px;
+      font-weight: 300; }
+    .form-group input::-moz-placeholder {
+      color: rgba(105, 120, 135, 0.6);
+      font-size: 16px;
+      font-weight: 300; }
+    .form-group input:-ms-input-placeholder {
+      color: rgba(105, 120, 135, 0.6);
+      font-size: 16px;
+      font-weight: 300; }
+  .form-group input[name="name"] {
+    background-image: url("../img/icon/user-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 15px center; }
+  .form-group input[name="phone"] {
+    background-image: url("../img/icon/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 15px center; }
