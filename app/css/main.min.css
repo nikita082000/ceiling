@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Lato';
   src: url("../../fonts/latoregular.woff2") format("woff2"), url("../../fonts/latoregular.woff") format("woff"), url("../../fonts/latoregular.woff") format("truetype");
@@ -931,6 +932,89 @@ ul {
             justify-content: space-between; }
     .final-repairs-form .form-wrapper-title {
       margin-bottom: 30px; }
+
+.ceilings-crib {
+  background-image: url("../img/bg/сrib-bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  margin-top: 80px; }
+  .ceilings-crib-title {
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    max-width: 490px;
+    margin-top: 40px; }
+  .ceilings-crib-desc {
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    max-width: 426px;
+    line-height: 1.4; }
+    .ceilings-crib-desc span {
+      font-weight: 500; }
+  .ceilings-crib-info {
+    position: relative; }
+    .ceilings-crib-info img {
+      position: absolute;
+      right: -180px;
+      bottom: -52px; }
+  .ceilings-crib-form {
+    margin-right: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .ceilings-crib-form .form-wrapper-title {
+      line-height: 28px; }
+
+.discount {
+  background-image: url("../img/bg/sale-bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  margin-top: 80px; }
+  .discount-title {
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    max-width: 490px;
+    margin-top: 60px; }
+  .discount-desc {
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    max-width: 426px;
+    line-height: 1.4; }
+    .discount-desc span {
+      font-weight: 500; }
+  .discount-info {
+    position: relative; }
+  .discount-form {
+    margin-right: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .discount-form .form-wrapper-title {
+      line-height: 28px;
+      margin-bottom: 5px; }
+    .discount-form .form-wrapper-subtitle {
+      margin-bottom: 10px; }
 
 .how-job {
   background-color: #f8fbfc;
