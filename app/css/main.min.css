@@ -457,7 +457,8 @@ body {
   text-align: center; }
 
 body {
-  font-family: 'Lato'; }
+  font-family: 'Lato';
+  margin-bottom: 1618px; }
 
 p {
   margin: 0; }
@@ -486,7 +487,8 @@ ul {
     border-bottom: 4px solid #056402;
     text-transform: uppercase;
     font-size: 18px;
-    font-weight: 500; }
+    font-weight: 500;
+    margin-top: 20px; }
 
 @-webkit-keyframes si-button-pulse {
   from {
@@ -506,6 +508,7 @@ ul {
 
 .form-wrapper {
   max-width: 365px;
+  width: 100%;
   -webkit-box-shadow: 0 0 7px 1px rgba(255, 255, 255, 0.6);
           box-shadow: 0 0 7px 1px rgba(255, 255, 255, 0.6);
   -webkit-border-radius: 2px;
@@ -603,6 +606,66 @@ ul {
     background-image: url("../img/icon/phone-icon.svg");
     background-repeat: no-repeat;
     background-position: 15px center; }
+
+.form-calculator-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px; }
+  .form-calculator-group span {
+    font-size: 18px;
+    color: black;
+    font-weight: 300;
+    min-width: 175px; }
+  .form-calculator-group input {
+    width: 60px;
+    height: 40px;
+    border: 0;
+    -webkit-box-shadow: inset 0 0 2px 1px #e6e7e7;
+            box-shadow: inset 0 0 2px 1px #e6e7e7;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    background-color: #eef2f6;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700; }
+  .form-calculator-group label {
+    font-size: 18px;
+    font-weight: 300;
+    color: black; }
+  .form-calculator-group-result {
+    font-size: 18px;
+    margin-right: 20px;
+    font-weight: 700; }
+
+.form-calculator-gift {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0; }
+  .form-calculator-gift p {
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    line-height: 1.2;
+    text-align: right; }
+    .form-calculator-gift p span {
+      font-weight: 600; }
 
 .header {
   background-image: url(../img/bg/main-bg.jpeg);
@@ -761,14 +824,16 @@ ul {
 
 .what-get {
   padding-bottom: 70px;
-  padding-top: 60px; }
+  padding-top: 60px;
+  background-color: #f8fbfc; }
   .what-get-title {
     font-size: 28px;
     font-weight: 400;
     color: black;
     padding-bottom: 45px;
     max-width: 845px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    line-height: 1.2; }
   .what-get-slider {
     max-width: 940px;
     margin: 0 auto; }
@@ -839,3 +904,30 @@ ul {
         font-size: 22px;
         font-weight: 400;
         padding-bottom: 30px; }
+
+.final-repairs {
+  background-image: url("../img/bg/final-repair.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-top: 55px;
+  padding-bottom: 50px; }
+  .final-repairs-title {
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    max-width: 560px;
+    margin-top: 80px; }
+  .final-repairs-form {
+    margin-right: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .final-repairs-form .form-wrapper-title {
+      margin-bottom: 30px; }

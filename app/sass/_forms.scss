@@ -1,5 +1,6 @@
 .form-wrapper {
   max-width: 365px;
+  width: 100%;
   box-shadow: 0 0 7px 1px rgba(255, 255, 255, 0.6);
   border-radius: 2px;
   background-color: white;
@@ -89,5 +90,57 @@
     background-image: url('../img/icon/phone-icon.svg');
     background-repeat: no-repeat;
     background-position: 15px center;
+  }
+}
+
+.form-calculator {
+  &-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    span {
+      font-size: 18px;
+      color: black;
+      font-weight: 300;
+      min-width: 175px;
+    }
+    input {
+      width: 60px;
+      height: 40px;
+      border: 0;
+      box-shadow: inset 0 0 2px 1px #e6e7e7;
+      border-radius: 2px;
+      background-color: #eef2f6;
+      outline: none;
+      font-size: 16px;
+      text-align: center;
+      font-weight: 700;
+    }
+    label {
+      font-size: 18px;
+      font-weight: 300;
+      color: black;
+    }
+    &-result {
+      font-size: 18px;
+      margin-right: 20px;
+      font-weight: 700;
+    }
+  }
+  &-gift {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      color: black;
+      line-height: 1.2;
+      text-align: right;
+      span {
+        font-weight: 600;
+      }
+    }
   }
 }
