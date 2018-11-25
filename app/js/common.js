@@ -13,6 +13,10 @@ $(function() {
 
     $('#certificates').lightGallery();
 
+    $('#video-gallery, #video-gallery-2, #video-gallery-3').lightGallery();
+
+    $('#fotorama-gallery, #fotorama-gallery-2, #fotorama-gallery-3').lightGallery();
+
     $('.manufacture-wrapper-slider').slick({
         infinite: true,
         slidesToShow: 1,
@@ -34,6 +38,18 @@ $(function() {
       $('.manufacture-certificates-hide').toggle();
 
       $(this).text() === 'показать сертификаты' ? $(this).text('скрыть сертификаты') : $(this).text('показать сертификаты');
+    });
+
+    $('.reviews-read-more').on('click', function() {
+      $(this).parent().find('.reviews-review-text-hide').removeClass('reviews-review-text-hide');
+      $(this).toggle();
+    });
+
+    $('.reviews-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true
     });
 
 

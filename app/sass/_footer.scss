@@ -1,0 +1,65 @@
+.footer {
+  padding: 60px 0 40px 0;
+  &-main {
+    display: flex;
+    align-items: center;
+    &-data {
+      padding-left: 100px;
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        color: black;
+      }
+      span {
+        color: black;
+        font-weight: 300;
+        font-size: 16px;
+        display: block;
+        line-height: 1.2;
+      }
+    }
+    &-address {
+      padding-left: 80px;
+      span {
+        font-size: 16px;
+        font-weight: 300;
+        color: black;
+        display: block;
+        line-height: 1.2;
+        &:before {
+          content: url('../img/icon/address.svg');
+          width: 22px;
+          display: inline-block;
+        }
+        &:last-child:before {
+          content: url('../img/icon/email.svg');
+          width: 22px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  &-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 30px;
+    &-copy {
+      padding-right: 320px;
+      font-size: 14px;
+      font-weight: 300;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    &-creat-by {
+      font-weight: 300;
+      font-size: 16px;
+      color: black;
+      line-height: 1.2;
+      cursor: pointer;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

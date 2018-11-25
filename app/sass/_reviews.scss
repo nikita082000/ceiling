@@ -1,0 +1,234 @@
+.reviews {
+  padding-bottom: 80px;
+  &-title {
+      font-size: 28px;
+      font-weight: 400;
+      color: black;
+      line-height: 1.2;
+      padding: 75px 40px 40px 40px;
+  }
+  &-slider {
+
+    .slick-slide {
+      outline: none;
+    }
+    .slick-list {
+      padding: 5px 0;
+    }
+    .slick-next {
+      height: auto;
+      right: 30px;
+      &:before {
+        content: url(../img/icon/slider-arrow-right.svg);
+
+      }
+    }
+
+    .slick-prev {
+      height: auto;
+      left: 15px;
+      &:before {
+        content: url(../img/icon/slider-arrow-left.svg);
+
+      }
+    }
+
+    &-item {
+      display: flex;
+      padding: 0 65px 0 100px;
+    }
+  }
+  &-fotorama {
+    &-images {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 25px;
+      img {
+        width: 79px;
+        height: 64px;
+      }
+    }
+  }
+  &-review {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 34px;
+    &-text {
+      max-width: 415px;
+      padding-left: 30px;
+      &-hide{
+        height: 101px;
+        overflow: hidden;
+      }
+      &-citate {
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.2;
+        max-width: 306px;
+        position: relative;
+        margin-bottom: 15px;
+        margin-top: 34px;
+        &:after {
+          content: '“';
+          color: black;
+          font-size: 50px;
+          font-weight: 400;
+          position: absolute;
+          top: -33px;
+          right: 0;
+        }
+      }
+      p {
+        font-weight: 300;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.2;
+      }
+      .reviews-read-more {
+        font-weight: 300;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.2;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    &-count {
+      width: 100%;
+      font-size: 22px;
+      color: black;
+      font-weight: 400;
+      padding-left: 110px;
+    }
+  }
+}
+
+.question {
+  background-color: #f8fbfc;
+  padding-top: 30px;
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px 0 100px ;
+  }
+  &-info {
+    &-title {
+      color: black;
+      font-size: 28px;
+      font-weight: 400;
+    }
+    &-subtitle {
+      font-size: 22px;
+      font-weight: 300;
+      color: black;
+    }
+    &-phone {
+      font-size: 36px;
+      color: black;
+      font-weight: 700;
+      text-decoration: none;
+      &:hover {
+        color: black;
+        text-decoration: none;
+      }
+      &:before {
+        content: url('../img/icon/phone-call-2.png');
+        padding-right: 12px;
+      }
+    }
+    &-time {
+      font-size: 20px;
+      font-weight: 300;
+      color: black;
+      line-height: 0.5;
+    }
+  }
+  &-manager {
+    position: relative;
+    &-info {
+      position: absolute;
+      right: -100px;
+      top: 42%;
+      transform: translateY(-50%);
+    }
+    &-name {
+      font-size: 18px;
+      color: black;
+      font-weight: 400;
+    }
+    &-post {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 16px;
+      color: #939191;
+    }
+  }
+}
+
+.footer {
+  padding: 60px 0 40px 0;
+  &-main {
+    display: flex;
+    align-items: center;
+    &-data {
+      padding-left: 100px;
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        color: black;
+      }
+      span {
+        color: black;
+        font-weight: 300;
+        font-size: 16px;
+        display: block;
+        line-height: 1.2;
+      }
+    }
+    &-address {
+      padding-left: 80px;
+      span {
+        font-size: 16px;
+        font-weight: 300;
+        color: black;
+        display: block;
+        line-height: 1.2;
+        &:before {
+          content: url('../img/icon/address.svg');
+          width: 22px;
+          display: inline-block;
+        }
+        &:last-child:before {
+          content: url('../img/icon/email.svg');
+          width: 22px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  &-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 30px;
+    &-copy {
+      padding-right: 320px;
+      font-size: 14px;
+      font-weight: 300;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    &-creat-by {
+      font-weight: 300;
+      font-size: 16px;
+      color: black;
+      line-height: 1.2;
+      cursor: pointer;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

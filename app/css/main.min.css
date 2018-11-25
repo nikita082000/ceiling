@@ -998,8 +998,7 @@ ul {
   -webkit-background-size: cover;
           background-size: cover;
   padding-top: 35px;
-  padding-bottom: 50px;
-  margin-top: 80px; }
+  padding-bottom: 50px; }
   .discount-title {
     font-size: 50px;
     color: white;
@@ -1330,3 +1329,291 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 75px; }
+
+.reviews {
+  padding-bottom: 80px; }
+  .reviews-title {
+    font-size: 28px;
+    font-weight: 400;
+    color: black;
+    line-height: 1.2;
+    padding: 75px 40px 40px 40px; }
+  .reviews-slider .slick-slide {
+    outline: none; }
+  .reviews-slider .slick-list {
+    padding: 5px 0; }
+  .reviews-slider .slick-next {
+    height: auto;
+    right: 30px; }
+    .reviews-slider .slick-next:before {
+      content: url(../img/icon/slider-arrow-right.svg); }
+  .reviews-slider .slick-prev {
+    height: auto;
+    left: 15px; }
+    .reviews-slider .slick-prev:before {
+      content: url(../img/icon/slider-arrow-left.svg); }
+  .reviews-slider-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 65px 0 100px; }
+  .reviews-fotorama-images {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 25px; }
+    .reviews-fotorama-images img {
+      width: 79px;
+      height: 64px; }
+  .reviews-review {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding-left: 34px; }
+    .reviews-review-text {
+      max-width: 415px;
+      padding-left: 30px; }
+      .reviews-review-text-hide {
+        height: 101px;
+        overflow: hidden; }
+      .reviews-review-text-citate {
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.2;
+        max-width: 306px;
+        position: relative;
+        margin-bottom: 15px;
+        margin-top: 34px; }
+        .reviews-review-text-citate:after {
+          content: '“';
+          color: black;
+          font-size: 50px;
+          font-weight: 400;
+          position: absolute;
+          top: -33px;
+          right: 0; }
+      .reviews-review-text p {
+        font-weight: 300;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.2; }
+      .reviews-review-text .reviews-read-more {
+        font-weight: 300;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.2;
+        text-decoration: underline;
+        cursor: pointer; }
+    .reviews-review-count {
+      width: 100%;
+      font-size: 22px;
+      color: black;
+      font-weight: 400;
+      padding-left: 110px; }
+
+.question {
+  background-color: #f8fbfc;
+  padding-top: 30px; }
+  .question-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 200px 0 100px; }
+  .question-info-title {
+    color: black;
+    font-size: 28px;
+    font-weight: 400; }
+  .question-info-subtitle {
+    font-size: 22px;
+    font-weight: 300;
+    color: black; }
+  .question-info-phone {
+    font-size: 36px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none; }
+    .question-info-phone:hover {
+      color: black;
+      text-decoration: none; }
+    .question-info-phone:before {
+      content: url("../img/icon/phone-call-2.png");
+      padding-right: 12px; }
+  .question-info-time {
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    line-height: 0.5; }
+  .question-manager {
+    position: relative; }
+    .question-manager-info {
+      position: absolute;
+      right: -100px;
+      top: 42%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .question-manager-name {
+      font-size: 18px;
+      color: black;
+      font-weight: 400; }
+    .question-manager-post {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 16px;
+      color: #939191; }
+
+.footer {
+  padding: 60px 0 40px 0; }
+  .footer-main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer-main-data {
+      padding-left: 100px; }
+      .footer-main-data p {
+        font-size: 20px;
+        font-weight: 400;
+        color: black; }
+      .footer-main-data span {
+        color: black;
+        font-weight: 300;
+        font-size: 16px;
+        display: block;
+        line-height: 1.2; }
+    .footer-main-address {
+      padding-left: 80px; }
+      .footer-main-address span {
+        font-size: 16px;
+        font-weight: 300;
+        color: black;
+        display: block;
+        line-height: 1.2; }
+        .footer-main-address span:before {
+          content: url("../img/icon/address.svg");
+          width: 22px;
+          display: inline-block; }
+        .footer-main-address span:last-child:before {
+          content: url("../img/icon/email.svg");
+          width: 22px;
+          display: inline-block; }
+  .footer-bottom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 30px; }
+    .footer-bottom-copy {
+      padding-right: 320px;
+      font-size: 14px;
+      font-weight: 300;
+      text-decoration: underline;
+      cursor: pointer; }
+    .footer-bottom-creat-by {
+      font-weight: 300;
+      font-size: 16px;
+      color: black;
+      line-height: 1.2;
+      cursor: pointer; }
+      .footer-bottom-creat-by:hover {
+        color: black; }
+
+.footer {
+  padding: 60px 0 40px 0; }
+  .footer-main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer-main-data {
+      padding-left: 100px; }
+      .footer-main-data p {
+        font-size: 20px;
+        font-weight: 400;
+        color: black; }
+      .footer-main-data span {
+        color: black;
+        font-weight: 300;
+        font-size: 16px;
+        display: block;
+        line-height: 1.2; }
+    .footer-main-address {
+      padding-left: 80px; }
+      .footer-main-address span {
+        font-size: 16px;
+        font-weight: 300;
+        color: black;
+        display: block;
+        line-height: 1.2; }
+        .footer-main-address span:before {
+          content: url("../img/icon/address.svg");
+          width: 22px;
+          display: inline-block; }
+        .footer-main-address span:last-child:before {
+          content: url("../img/icon/email.svg");
+          width: 22px;
+          display: inline-block; }
+  .footer-bottom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 30px; }
+    .footer-bottom-copy {
+      padding-right: 320px;
+      font-size: 14px;
+      font-weight: 300;
+      text-decoration: underline;
+      cursor: pointer; }
+    .footer-bottom-creat-by {
+      font-weight: 300;
+      font-size: 16px;
+      color: black;
+      line-height: 1.2;
+      cursor: pointer; }
+      .footer-bottom-creat-by:hover {
+        color: black; }
