@@ -3,6 +3,25 @@ body {
   margin-bottom: 21618px;
 }
 
+.slick-dots {
+  bottom: 20px;
+  li {
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background-color: white;
+    opacity: 0.4;
+    button:before {
+      display: none;
+    }
+  }
+  .slick-active {
+    background-color: #4274b0;
+    opacity: 1;
+  }
+}
+
 p {
   margin: 0;
 }
