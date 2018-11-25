@@ -34,6 +34,10 @@
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    @media (max-width: 1000px) {
+        flex-wrap: wrap;
+    }
+
     &-item {
       max-width: 262px;
       width: 100%;
@@ -43,9 +47,17 @@
       border: 1px solid #dcdcdc;
       background-color: white;
       padding: 8px;
+
+      @media (max-width: 1000px) {
+        margin-bottom: 20px;
+      }
+
       img {
         min-height: 279px;
         width: 100%;
+        @media (max-width: 1200px) {
+          object-fit: cover;
+        }
       }
       &-name {
         color: black;

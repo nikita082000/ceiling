@@ -11,6 +11,9 @@
     font-weight: 700;
     max-width: 560px;
     margin-top: 80px;
+    @media (max-width: 992px) {
+      padding-right: 10px;
+    }
   }
   &-form {
     margin-right: 100px;
@@ -60,6 +63,10 @@
     margin-right: 100px;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      margin-right: -13px;
+    }
     .form-wrapper-title {
       line-height: 28px;
     }

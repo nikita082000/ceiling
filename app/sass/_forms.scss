@@ -9,6 +9,9 @@
     margin-left: 40px;
     position: relative;
     padding-bottom: 50px;
+    @media (max-width: 1000px) {
+      margin-left: 0;
+    }
     &-gift {
       display: flex;
       align-items: center;

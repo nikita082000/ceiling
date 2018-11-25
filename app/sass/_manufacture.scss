@@ -12,13 +12,21 @@
   &-wrapper {
     padding-top: 40px;
     display: flex;
+
     &-slider {
       max-width: 555px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      @media (max-width: 1200px) {
+        max-width: 528px;
+      }
       .slick-slide img {
         width: 554px;
         height: 428px;
         object-fit: cover;
+        @media (max-width: 1200px) {
+          width: 528px;
+          height: 419px;
+        }
       }
       .slick-slide {
       outline: none;
@@ -81,6 +89,7 @@
       justify-content: center;
       margin-top: 20px;
       padding-bottom: 70px;
+
       p {
         color: black;
         font-size: 20px;
@@ -103,6 +112,14 @@
       display: flex;
       justify-content: space-between;
       padding-bottom: 75px;
+      a {
+        @media (max-width: 1200px) {
+          margin-bottom: 10px;
+        }
+      }
+      @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
     }
   }
 }

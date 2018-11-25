@@ -6,7 +6,23 @@ $(function() {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: true
+        arrows: true,
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('#manufacture-lightgallery').lightGallery();

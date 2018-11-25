@@ -19,16 +19,27 @@
       width: 293px;
       height: 294px;
       object-fit: none;
+      @media (max-width: 1200px) {
+        width: 270px;
+        height: 270px;
+      }
     }
     .slick-slide {
       outline: none;
     }
     .slick-list {
       padding: 5px 0;
+
     }
     .slick-next {
       height: auto;
       right: -60px;
+      @media (max-width: 1200px) {
+        right: -11px;
+      }
+      @media (max-width: 1000px) {
+        right: 3px;
+      }
       &:before {
         content: url(../img/icon/slider-arrow-right.svg);
 
@@ -38,6 +49,12 @@
     .slick-prev {
       height: auto;
       left: -80px;
+      @media (max-width: 1200px) {
+        left: -23px;
+      }
+      @media (max-width: 1000px) {
+        left: -13px;
+      }
       &:before {
         content: url(../img/icon/slider-arrow-left.svg);
 
@@ -67,6 +84,9 @@
       justify-content: center;
       align-items: flex-end;
       visibility: hidden;
+      @media (max-width: 1200px) {
+        max-width: 270px;
+      }
       &:after {
         content: url('../img/icon/slider-zoom.svg');
         position: absolute;
