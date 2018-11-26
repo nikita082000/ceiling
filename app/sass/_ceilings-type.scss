@@ -1,5 +1,9 @@
 .ceilings-type {
   padding-top: 75px;
+
+  @media (max-width: 767px) {
+    padding-top: 40px;
+  }
   .show-more {
     margin: 20px auto 0 auto;
     display: flex;
@@ -22,11 +26,17 @@
     color: black;
     font-weight: 400;
     padding-bottom: 40px;
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
   }
   &-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
     &-img {
       overflow: hidden;
     }

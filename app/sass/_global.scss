@@ -2,6 +2,12 @@ body {
   font-family: 'Lato';
 }
 
+.container {
+  @media (max-width: 767px) {
+    max-width: 320px;
+  }
+}
+
 .slick-dots {
   bottom: 20px;
   li {
@@ -39,8 +45,6 @@ ul {
 
   &:hover {
     box-shadow: none;
-    -webkit-animation: si-button-pulse 0.8s 0s ease-out 1;
-    -moz-animation: si-button-pulse 0.8s 0s ease-out 1;
     animation: si-button-pulse 0.8s 0s ease-out 1;
   }
 
@@ -53,6 +57,18 @@ ul {
     font-size: 18px;
     font-weight: 500;
     margin-top: 20px;
+
+    @media (max-width: 767px) {
+      max-width: 277px;
+      width: 100%;
+    }
+  }
+
+  &-disabled {
+    &:hover {
+      box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.6);
+      animation: none;
+    }
   }
 
 }

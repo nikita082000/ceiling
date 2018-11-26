@@ -1,17 +1,37 @@
 .manufacture {
+  padding-top: 60px;
+
+  @media (max-width: 767px) {
+    padding-top: 40px;
+  }
   &-title {
     font-size: 28px;
     font-weight: 400;
     color: black;
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 1.4;
+    }
   }
   &-subtitle {
     color: black;
     font-weight: 300;
     font-size: 22px;
+    @media (max-width: 767px) {
+      font-size: 16px;
+      padding-top: 15px;
+    }
   }
   &-wrapper {
     padding-top: 40px;
     display: flex;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+    @media (max-width: 767px) {
+      padding-top: 20px;
+    }
 
     &-slider {
       max-width: 555px;
@@ -19,6 +39,11 @@
       @media (max-width: 1200px) {
         max-width: 528px;
       }
+
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+
       .slick-slide img {
         width: 554px;
         height: 428px;
@@ -26,6 +51,13 @@
         @media (max-width: 1200px) {
           width: 528px;
           height: 419px;
+        }
+
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+        @media (max-width: 767px) {
+          height: auto;
         }
       }
       .slick-slide {
@@ -37,7 +69,13 @@
       right: 50px;
       &:before {
         content: url(../img/icon/slider-arrow-right.svg);
+        @media (max-width: 767px) {
+          content: url(../img/icon/slider-arrow-right-sm.svg);
+        }
 
+      }
+      @media (max-width: 767px) {
+        right: 15px;
       }
     }
 
@@ -47,7 +85,14 @@
       z-index: 99;
       &:before {
         content: url(../img/icon/slider-arrow-left.svg);
+        @media (max-width: 767px) {
+          content: url(../img/icon/slider-arrow-left-sm.svg);
+        }
 
+      }
+
+      @media (max-width: 767px) {
+        left: 12px;
       }
     }
 
@@ -55,12 +100,20 @@
 
     &-desc {
       padding-left: 30px;
+
+      @media (max-width: 991px) {
+        padding-left: 0;
+      }
+
       &-title {
         font-size: 20px;
         color: black;
         font-weight: 400;
         line-height: 1.2;
         margin-bottom: 25px;
+        @media (max-width: 767px) {
+          font-size: 16px;
+        }
       }
 
       &-list {
@@ -69,9 +122,17 @@
         color: black;
         font-size: 20px;
         font-weight: 300;
+        @media (max-width: 767px) {
+          font-size: 16px;
+        }
       }
     }
     &-companies {
+
+    //   &-wrapper {
+    //         display: flex;
+    // align-items: center;
+    //   }
 
       &-block {
         display: flex;
@@ -90,6 +151,10 @@
       margin-top: 20px;
       padding-bottom: 70px;
 
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+
       p {
         color: black;
         font-size: 20px;
@@ -97,6 +162,11 @@
         max-width: 405px;
         line-height: 1.2;
         margin-right: 30px;
+        @media (max-width: 767px) {
+          font-size: 16px;
+          text-align: center;
+          padding-bottom: 20px;
+        }
       }
       .btn-green {
         width: 277px;

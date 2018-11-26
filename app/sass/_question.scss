@@ -9,8 +9,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 200px 0 100px ;
+
+
     @media (max-width: 1200px) {
       padding: 0 110px 0 21px;
+    }
+    @media (max-width: 767px) {
+      padding: 0;
     }
   }
   &-info {
@@ -18,17 +23,35 @@
       color: black;
       font-size: 28px;
       font-weight: 400;
+      @media (max-width: 767px) {
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.4;
+      }
     }
     &-subtitle {
       font-size: 22px;
       font-weight: 300;
       color: black;
+      @media (max-width: 767px) {
+        text-align: center;
+        font-size: 16px;
+      }
     }
     &-phone {
       font-size: 36px;
       color: black;
       font-weight: 700;
       text-decoration: none;
+
+      @media (max-width: 991px) {
+        font-size: 28px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 30px;
+      }
+
       &:hover {
         color: black;
         text-decoration: none;
@@ -43,10 +66,30 @@
       font-weight: 300;
       color: black;
       line-height: 0.5;
+
+      @media (max-width: 991px) {
+        line-height: 1.2;
+      }
+      @media (max-width: 767px) {
+        text-align: center;
+        font-size: 16px;
+        padding-bottom: 35px;
+      }
     }
   }
   &-manager {
     position: relative;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    img {
+      @media (max-width: 991px) {
+        max-width: 300px;
+      }
+    }
+
     &-info {
       position: absolute;
       right: -100px;

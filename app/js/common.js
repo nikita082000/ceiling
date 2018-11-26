@@ -2,6 +2,11 @@ $(function() {
 
     $('#lightgallery').lightGallery();
 
+    if(window.matchMedia('(max-width: 768px)').matches)
+    {
+      $('.header-top-call-phone a, .question-info-phone, .how-job-list-item a').removeAttr('data-toggle').removeAttr('data-target');
+    }
+
     $('.what-get-slider').slick({
         infinite: true,
         slidesToShow: 3,
@@ -14,11 +19,8 @@ $(function() {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 767,
                 settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
                     slidesToShow: 1
                 }
             }
@@ -45,10 +47,59 @@ $(function() {
         $('.ceilings-type-wrapper-item:gt(-5)').hide();
     }
 
+
+
     $('.show-more').on('click', function() {
+      if ($(window).width() > 767) {
         $('.ceilings-type-wrapper-item:gt(-5)').toggle();
+      } else {
+        $('.ceilings-type-wrapper-item:gt(-11)').toggle();
+      }
         $(this).hide();
     });
+
+    if ($(window).width() < 767) {
+        $('.ceilings-type-wrapper-item:gt(-11)').hide();
+    }
+
+
+
+    if ($(window).width() < 767) {
+      $('.advantages-list').slick({
+        infinite: true,
+        slidesToShow: 1,
+        arrows: false
+      });
+    }
+
+    if ($(window).width() < 767) {
+      $('.how-job-list').slick({
+        infinite: true,
+        slidesToShow: 1,
+        dots: true,
+        arrows: false
+      });
+    }
+
+    if ($(window).width() < 767) {
+      $('.team-wrapper').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false
+      });
+    }
+
+    if ($(window).width() < 767) {
+      $('.manufacture-wrapper-desc-companies').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+      });
+    }
+
 
     $('.show-certificates').on('click', function() {
       $('.manufacture-certificates-hide').toggle();
@@ -68,6 +119,82 @@ $(function() {
         arrows: true
     });
 
+    $("#phone1, #phone2, #phone3").mask("+7(999) 999-9999");
 
+    var calcSquare = $('.form-calculator-group-square');
+  var calcDots = $('.form-calculator-group-dots');
+
+  var calcResult = $('.form-calculator-group-result');
+
+  $('.form-calculator-group').on('input', function() {
+    // console.log(calcSquare.val());
+    // console.log(calcDots.val());
+    var calcSquareCount = calcSquare.val();
+    var calcDotsCount = calcDots.val();
+
+    if (calcSquareCount && calcDotsCount > 0) {
+      var calcResultCount = (calcSquareCount * 270) + (calcDotsCount * 250);
+      console.log(calcResultCount);
+      calcResult.text(calcResultCount + ' руб.');
+    }
+  });
+
+  var calcSquare = $('.form-calculator-group-square');
+  var calcDots = $('.form-calculator-group-dots');
+
+  var calcResult = $('.form-calculator-group-result');
+
+  $('.form-calculator-group').on('input', function() {
+    // console.log(calcSquare.val());
+    // console.log(calcDots.val());
+    var calcSquareCount = calcSquare.val();
+    var calcDotsCount = calcDots.val();
+
+    if (calcSquareCount && calcDotsCount > 0) {
+      var calcResultCount = (calcSquareCount * 270) + (calcDotsCount * 250);
+      console.log(calcResultCount);
+      calcResult.text(calcResultCount + ' руб.');
+      $('#calculator-result-hide').val(calcResultCount);
+    }
+  });
+
+  // Отправка форм
+  $(".modal-call-form, .modal-header-form").submit(function() {
+    var th = $(this);
+      $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: th.serialize()
+      }).done(function() {
+        $(this).find("input").val("");
+        var url = "thanks.html";
+        $(location).attr('href',url);
+        // $('#myModal2').modal('hide');
+        $('#myModal6').modal('hide');
+        setTimeout(function() {
+          th.trigger("reset");
+        }, 500);
+      });
+    return false;
+  });
+
+  $(".calculator-gift-form").submit(function() {
+    var th = $(this);
+      $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: th.serialize()
+      }).done(function() {
+        $(this).find("input").val("");
+        var url = "thanks.html";
+        $(location).attr('href',url);
+        // $('#myModal2').modal('hide');
+        $('#myModal6').modal('hide');
+        setTimeout(function() {
+          th.trigger("reset");
+        }, 500);
+      });
+    return false;
+  });
 
 });
